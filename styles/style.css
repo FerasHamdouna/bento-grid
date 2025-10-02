@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lite-purple: hsl(254, 88%, 90%);
+  --dark-purple: hsl(256, 67%, 59%);
+  --lite-yellow: hsl(31, 66%, 93%);
+  --dark-yellow: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+footer {
+  padding-bottom: 30px;
+}
+
+main .container {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 50px);
+  gap: 30px;
+  grid-template-areas: 
+  "poster7 poster1 poster1 poster4"
+  "poster7 poster1 poster1 poster4"
+  "poster7 poster1 poster1 poster4"
+  "poster7 poster1 poster1 poster4"  
+  "poster7 poster2 poster3 poster4"
+  "poster8 poster2 poster3 poster4"
+  "poster8 poster2 poster3 poster4"
+  "poster8 poster6 poster5 poster5"
+  "poster8 poster6 poster5 poster5"
+  "poster8 poster6 poster5 poster5"
+  ;
+}
+
+main .container > div {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main .container .main-title {
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: .9;
+}
+
+main .container .additional-info {
+  font-weight: 400;
+}
+
+main .container .poster1 {
+  grid-area: poster1;
+  background-color: var(--dark-purple);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container .poster1 .main-title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+main .container .poster1 .main-title .ratio {
+  color: var(--dark-yellow);
+}
+
+main .container .poster1 .main-title .italic {
+  
+}
+
+main .container .poster1 img {
+  width: 185px;
+  margin-bottom: 5px;
+}
+
+main .container .poster1 .additional-info {
+  font-size: 18px;
+  color: hsl(0, 0%, 100%, 70%);
+}
+
+main .container .poster2 {
+  grid-area: poster2;
+  background-color: var(--white);
+  padding: 20px;
+}
+
+main .container .poster2 img {
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+main .container .poster2 p {
+  font-size: 27px;
+}
+
+main .container .poster3 {
+  grid-area: poster3;
+  background-color: var(--dark-yellow);
+  padding: 20px 20px 0 20px;
+}
+
+main .container .poster3 p {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+main .container .poster3 img {
+  width: 150px;
+}
+
+main .container .poster4 {
+  padding: 40px 20px;
+  grid-area: poster4;
+  background-color: var(--lite-purple);
+}
+
+main .container .poster4 .main-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main .container .poster4 img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+main .container .poster4 .additional-info {
+  font-size: 15px;
+}
+
+main .container .poster5 {
+  grid-area: poster5;
+  background-color: var(--dark-purple);
+  color: var(--white);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .container .poster5 img {
+  height: 180px;
+  margin: auto 0;
+}
+
+main .container .poster5 p {
+  font-size: 30px;
+  margin: auto 0 auto 5px;
+}
+
+main .container .poster6 {
+  grid-area: poster6;
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+main .container .poster6 .main-title {
+  font-size: 50px;
+  margin-bottom: -25px;
+}
+
+main .container .poster6 .additional-info {
+  font-size: 15px;
+}
+
+main .container .poster6 img {
+  width: 150px;
+}
+
+main .container .poster7 {
+  grid-area: poster7;
+  background-color: var(--lite-yellow);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+main .container .poster7 p {
+  font-size: 32px;
+}
+
+main .container .poster7 p span {
+  color: var(--dark-purple);
+  font-style: italic;
+}
+
+main .container .poster7 img {
+  width: 90%;
+}
+
+main .container .poster8 {
+  grid-area: poster8;
+  background-color: var(--dark-yellow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .container .poster8 p {
+  font-size: 35px;
+}
+
+main .container .poster8 img {
+  width: 180px;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  background-color: var(--lite-purple);
+  color: var(--black);
+  padding: 15px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.attribution a:hover {
+  background-color: var(--dark-purple);
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+    padding: 30px 20px;
+  }
+  
+  main {
+    margin-bottom: 30px;
+  }
+  
+  main .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "poster1"
+    "poster2"
+    "poster3"
+    "poster4"
+    "poster5"
+    "poster6"
+    "poster7"
+    "poster8";
+  }
+  
+  main .container .poster1 {
+    padding: 30px;
+  }
+
+  main .container .poster1 .main-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  main .container .poster2 img {
+    width: 320px;
+  }
+
+  main .container .poster2 p {
+    font-size: 27px;
+  }
+  
+  main .container .poster3 {
+    max-height: 220px;
+  }
+  
+  main .container .poster3 img {
+    width: 210px;
+  }
+  
+  main .container .poster4 {
+    padding: 30px 15px;
+  }
+  
+  main .container .poster4 .main-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  main .container .poster4 img {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+
+  main .container .poster4 .additional-info {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  main .container .poster5 {
+    display: block;
+    text-align: center;
+  }
+
+  main .container .poster5 img {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  main .container .poster5 p {
+    font-size: 30px;
+    padding: 0 40px;
+  }
+  
+  main .container .poster6 {
+    padding: 25px;
+  }
+  
+  main .container .poster6 .main-title {
+    margin-bottom: -10px;
+  }
+
+  main .container .poster6 .additional-info {
+    font-size: 20px;
+  }
+
+  main .container .poster6 img {
+    width: 150px;
+  }
+  
+  main .container .poster7 {
+    padding: 30px;
+    display: block;
+  }
+
+  main .container .poster7 p {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  main .container .poster7 img {
+    width: 200px;
+  }
+  
+  main .container .poster8 p {
+    margin-bottom: 20px;
+  }
+  
+  main .container .poster8 img {
+    width: 230px;
+  }
+  
+  .attribution {
+    font-size: 10px;
+  }
+  
+  .attribution a {
+    padding: 10px;
+  }
+}
